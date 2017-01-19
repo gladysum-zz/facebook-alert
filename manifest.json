@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Facebook Alert",
+    "version": "1.0.0",
+    "description": "Displays an alert when you navigate to facebook.com",
+
+    "content_scripts": [{
+      "js": ["alert.js"],
+      "matches": ["*://www.facebook.com/*"]
+    }],
+
+    "browser_action": {
+        "default_icon": "anti-facebook-logo.png",
+        "default_title": "Facebook Alert"
+    }
+}
